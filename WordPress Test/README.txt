@@ -60,24 +60,8 @@ register_taxonomy( 'nombre de la taxonomia(no se puede repetir el nombre si ya t
         'labels' => $labels,
         'show_ui' => true,
         'query_var' => true,
-        'rewrite' => array( 'slug' => 'genero' ),
+        'rewrite' => array( 'slug' => 'nombre de la taxonomia especificado anteriormente en register_taxonomy' ),
 ));
 
-$labels = array(
-        'name' => _x( 'Directores', 'taxonomy general name' ),
-        'singular_name' => _x( 'Director', 'taxonomy singular name' ),
-        'search_items' =>  __( 'Buscar director' ),
-        'popular_items' => __( 'Directores populares' ),
-        'all_items' => __( 'Todos los directores' ),
-        'parent_item' => null,
-        'parent_item_colon' => null,
-        'edit_item' => __( 'Editar director' ),
-        'update_item' => __( 'Actualizar director' ),
-        'add_new_item' => __( 'Añadir nuevo director' ),
-        'new_item_name' => __( 'Nombre del nuevo director' ),
-        'separate_items_with_commas' => __( 'Separar directores por comas' ),
-        'add_or_remove_items' => __( 'Añadir o eliminar directores' ),
-        'choose_from_most_used' => __( 'Escoger entre los directores más populares' )
-);
 
 }
